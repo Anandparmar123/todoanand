@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.3b98a003.css","mappings":"AAAA,IACI,cACJ,CACA,SACI,WAAY,CACZ,WACJ","sources":["style.css"],"sourcesContent":[".cp{\r\n    cursor: pointer;\r\n}\r\n.textbox{\r\n    height: 30px;\r\n    width: 200px;\r\n}"],"names":[],"sourceRoot":""}

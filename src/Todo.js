@@ -61,8 +61,11 @@ const Todo = () => {
             // if (user) {
     // })
     // Delete Items
-    const deleteItem = (id) => {
+    const deleteItem = (id,name) => {
         const updatedItems = items.filter((curElem) => {
+             if(curElem.id === id){
+                double.pop(name)
+            }
             return curElem.id !== id
         })
         setItems(updatedItems)
@@ -92,7 +95,7 @@ const Todo = () => {
                                     <div className='h-25 w-50 border border-dark p-1'>{curElem.name}</div>
                                     <div>
                                         <i className="fa-solid fa-trash mx-2 my-2 cp" onClick={() => {
-                                            deleteItem(curElem.id)
+                                            deleteItem(curElem.id,curElem.name)
                                         }}></i>
                                     </div>
                                 </div>
